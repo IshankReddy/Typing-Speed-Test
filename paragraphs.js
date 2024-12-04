@@ -1,0 +1,60 @@
+const paragraphs = [
+    "The quick brown fox jumps over the lazy dog, demonstrating all twenty-six letters of the English alphabet in a single sentence.",
+    "In the bustling city streets, people hurry past each other, their footsteps creating a symphony of urban life.",
+    "The ancient oak tree stood sentinel in the garden, its branches reaching toward the sky like gnarled fingers.",
+    "Sunlight filtered through the leaves, creating dancing shadows on the forest floor below.",
+    "The aroma of freshly baked bread wafted through the neighborhood, drawing people to the local bakery.",
+    "Waves crashed against the rocky shore, sending spray high into the salty air.",
+    "The library was silent except for the gentle rustle of turning pages and occasional whispers.",
+    "Mountain peaks pierced the clouds, their snow-capped summits glowing in the morning light.",
+    "Children's laughter echoed across the playground as they chased each other during recess.",
+    "The old grandfather clock in the hallway marked time with its steady tick-tock rhythm.",
+    "Stars twinkled in the velvet night sky, forming constellations that told ancient stories.",
+    "Steam rose from the cup of coffee, carrying with it the promise of a new day.",
+    "The garden burst with color as spring flowers bloomed in vibrant displays.",
+    "Rain drummed steadily on the roof, creating a soothing natural lullaby.",
+    "The museum's marble halls housed treasures from civilizations long past.",
+    "Autumn leaves danced on the breeze before settling gently on the ground.",
+    "The concert hall filled with the rich sounds of the orchestra tuning their instruments.",
+    "Footprints in the snow marked the path of early morning wanderers.",
+    "The old bookshop's shelves held countless adventures waiting to be discovered.",
+    "Butterflies fluttered among the wildflowers in the meadow, their wings catching the sunlight.",
+    "The scent of pine needles filled the air in the Christmas tree lot.",
+    "Sailboats dotted the harbor, their white sails billowing in the afternoon breeze.",
+    "The art gallery's white walls showcased masterpieces from around the world.",
+    "Morning dew sparkled like diamonds on spider webs in the garden.",
+    "The farmer's market bustled with activity as vendors displayed their fresh produce.",
+    "Candlelight flickered across the faces of dinner party guests, creating a warm atmosphere.",
+    "The sound of crickets filled the summer evening with their gentle chorus.",
+    "Fresh snow covered the landscape, transforming it into a winter wonderland.",
+    "The antique shop window displayed curiosities from different eras and places.",
+    "Desert winds shaped the sand dunes into ever-changing sculptures.",
+    "The smell of rain on hot pavement marked the end of a summer drought.",
+    "Fog rolled in from the sea, wrapping the coastal town in a mysterious shroud.",
+    "The carnival's bright lights and cheerful music drew crowds of excited visitors.",
+    "Autumn colors painted the hillside in shades of red, orange, and gold.",
+    "The old train station echoed with the sounds of arrivals and departures.",
+    "Moonlight silvered the lake's surface, creating a mirror of the night sky.",
+    "The botanical garden displayed plants from every corner of the world.",
+    "Snow fell silently, covering the city in a blanket of pristine white.",
+    "The sound of seagulls marked the approach to the coastal fishing village.",
+    "Morning light streamed through stained glass windows, painting the floor in rainbow colors.",
+    "The zoo came alive with the sounds of exotic animals greeting the day.",
+    "Wind chimes tinkled softly in the gentle spring breeze.",
+    "The amusement park filled with the excited screams of roller coaster riders.",
+    "Fireflies dotted the summer evening like tiny moving stars.",
+    "The historic district's cobblestone streets told stories of times gone by.",
+    "Cherry blossoms floated on the breeze like pink snow in springtime.",
+    "The greenhouse's tropical plants created a jungle-like atmosphere.",
+    "Street musicians filled the air with melodies from around the world.",
+    "The observatory's telescope revealed the mysteries of distant galaxies.",
+    "The waterfall's constant roar provided nature's own white noise."
+];
+
+function getRandomParagraph() {
+    const randomIndex = Math.floor(Math.random() * paragraphs.length);
+    return paragraphs[randomIndex];
+}
+
+// In your main script
+document.getElementById('paragraphDisplay').innerText = getRandomParagraph();
